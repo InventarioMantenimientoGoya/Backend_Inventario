@@ -1,0 +1,137 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de verificación</title>
+    <style>
+        body {
+            font-family: 'Calibri', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            background: url("https://drive.usercontent.google.com/download?id=1BGFJaz0HxcbihD7twqQvHiVwI5hOYkkR&authuser=0") no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
+            text-align: center;
+            /* Agregado */
+        }
+
+        .header img {
+            width: 100px;
+            /* Tamaño máximo del logo */
+            height: auto;
+            margin-bottom: 10px;
+            /* Espacio entre la imagen y el título */
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: #ffffff;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            margin-top: 20px;
+        }
+
+        .subject,
+        .verification-text,
+        .message {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 20px;
+            line-height: 1.4;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .verification-text {
+            font-size: 20px;
+        }
+
+        .footer {
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 20px;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .text {
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+        }
+
+        .cubo {
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .header img {
+                width: 80px;
+                /* Redimensionar logo en pantallas pequeñas */
+            }
+
+            .subject,
+            .verification-text,
+            .message {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cubo">
+            <div class="header">
+                <img src="https://drive.google.com/uc?id=1mwSFDezRUaIfEQ9aW0FojA36Wko1NSg3" alt="Logotipo">
+                <h1>S.G.I.M GOYA</h1>
+            </div>
+            <div class="subject">
+                {{ subject }}
+            </div>
+            <div class="verification-text">
+                A continuación verá su código de verificación:
+            </div>
+            <div class="message">
+                {{ message }}
+            </div>
+            <div class="footer">
+                Gracias por utilizar nuestros servicios.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

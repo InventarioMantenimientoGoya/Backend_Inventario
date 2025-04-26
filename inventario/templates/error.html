@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>S.G.I.M GOYA</title>
+
+        <!-- Fuente Poppins -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+            rel="stylesheet">
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                background: url("https://drive.google.com/thumbnail?id=1H_8vWVmyK188YNmmVBdpa-g3Slkq93JL") no-repeat center center fixed;
+                background-size: cover;
+                background-position: center center;
+                font-family: 'Poppins', sans-serif;
+                color: #ffffff;
+                image-rendering: auto;  /* Mejora la calidad al renderizar la imagen */
+            }
+
+            .wrapper {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .container {
+                width: 100%;
+                max-width: 600px;
+                padding: 20px;
+                box-sizing: border-box;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 8px;
+                text-align: center;
+            }
+
+            .header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #ffffff;
+                padding-bottom: 10px;
+            }
+
+            .header img {
+                width: 100px;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            .header h1 {
+                font-size: 36px;
+                color: #ffffff;
+                margin: 0;
+                text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                margin-bottom: 10px;
+            }
+
+            /* Mensaje de error */
+            .message-error {
+                font-size: 18px;
+                color: #ffffff;  /* Color rojo */
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .footer {
+                font-size: 18px;
+                color: #ffffff;
+                margin-top: 20px;
+                text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .link-button {
+                background-color: white;
+                color: #1F2C73;
+                padding: 12px 25px;
+                border-radius: 10px;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 16px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                display: inline-block;
+                transition: background-color 0.3s ease;
+                max-width: 100%;
+                word-wrap: break-word;
+                text-align: center;
+            }
+
+            .link-button:hover {
+                background-color: #e6e6e6;
+                color: #1A245F;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="header">
+                    <img
+                        src="https://drive.google.com/thumbnail?id=1mwSFDezRUaIfEQ9aW0FojA36Wko1NSg3"
+                        alt="Logotipo" />
+                    <h1>S.G.I.M GOYA</h1>
+                </div>
+
+                <!-- Mensaje de error al reestablecer la contraseña -->
+                <div class="message-error">
+                    Ocurrió un error al intentar restablecer la contraseña. Por
+                    favor, intente nuevamente.
+                </div>
+
+                <br />
+
+                <a href="javascript:void(0)" class="link-button" onclick="cerrarPagina()">Aceptar</a>
+
+                <div class="footer">
+                    Gracias por utilizar nuestros servicios.
+                </div>
+            </div>
+        </div>
+        <script>
+            function cerrarPagina() {
+                window.close();  // Cierra la página si fue abierta por script
+            }
+        </script>
+    </body>
+</html>
